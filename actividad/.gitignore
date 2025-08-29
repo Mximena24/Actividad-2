@@ -1,0 +1,137 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ───── Miscellaneous ─────
+*.class
+*.log
+*.pyc
+*.swp
+*.lock
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# ───── Flutter / Dart / Pub ─────
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.generated/
+build/
+coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+
+# ───── Symbolication & Obfuscation ─────
+app.*.symbols
+app.*.map.json
+
+# ───── Android ─────
+android/.gradle/
+android/captures/
+android/.idea/
+android/local.properties
+android/.settings/
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# ───── iOS / macOS ─────
+ios/.dart_tool/
+ios/.idea/
+ios/.generated/
+ios/Flutter/.symlinks/
+ios/Runner.xcworkspace/
+ios/Pods/
+macos/.dart_tool/
+macos/.idea/
+macos/.generated/
+macos/Flutter/ephemeral/
+macos/Pods/
+
+# ───── Xcode ─────
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/xcshareddata/**/*
+!*.xcodeproj/project.xcworkspace/
+!*.xcodeproj/project.xcworkspace/**/*
+
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# ───── Windows ─────
+windows/.dart_tool/
+windows/.idea/
+windows/Flutter/ephemeral/
+
+# ───── Linux ─────
+linux/.dart_tool/
+linux/.idea/
+linux/Flutter/ephemeral/
+
+# ───── Web ─────
+web/.dart_tool/
+
+# ───── IDEs ─────
+.idea/
+*.iml
+
+# VS Code
+.vscode/  # ← Descomenta si no quieres versionar configuraciones locales
