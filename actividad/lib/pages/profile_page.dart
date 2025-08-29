@@ -2,15 +2,18 @@ import 'package:actividad/models/user_model.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatefulWidget {
-  final UserModel usuario;
+  final UserModel user;
 
-  const ProfilePage({super.key, required this.usuario});
+  const ProfilePage({super.key, required this.user});
 
   @override
   State<ProfilePage> createState() => _ProfilePageState();
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  final String url = "https://i.pravatar.cc/300";
+  int _counter = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,32 +23,19 @@ class _ProfilePageState extends State<ProfilePage> {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const SizedBox(height: 20),
             CircleAvatar(
               radius: 60,
-              backgroundImage: widget.usuario.image.isNotEmpty
-                  ? NetworkImage(widget.usuario.image)
-                  : null,
-              child: widget.usuario.image.isEmpty
-                  ? const Icon(Icons.person, size: 60)
-                  : null,
-            ),
+              backgroundImage: NetworkImage("https://i.pravatar.cc/300"),
+            ),  
             const SizedBox(height: 20),
-            Text("Nombre: ${widget.usuario.name}"),
-            Text("Edad: ${widget.usuario.age}"),
-            Text("Categoría: ${widget.usuario.category}"),
+            Text("Nombre: ${widget.user.name}"),
+            Text("Edad: ${widget.user.age}"),
+            Text("Categoría: ${widget.user.category}"),
             const SizedBox(height: 20),
           ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          // Puedes agregar acción aquí si quieres
-        },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        ),     
       ),
     );
   }
