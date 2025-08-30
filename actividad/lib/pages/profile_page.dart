@@ -12,7 +12,7 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   final String url = "https://i.pravatar.cc/300";
-  int _counter = 0;
+  final int _counter = 0;
 
   @override
   Widget build(BuildContext context) {

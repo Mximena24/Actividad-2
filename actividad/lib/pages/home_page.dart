@@ -23,11 +23,13 @@ class HomePage extends StatelessWidget {
         itemCount: _users.length,
         itemBuilder: (context, index) {
           final user = _users[index];
-          return Column(
+          return Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,            
+          children: [
+            Column(
             children: [
               Text("Nombre: ${user.name}"),
-              Text("Edad: ${user.age}"),
-              Text("Categoría: ${user.category}"),
               ElevatedButton(
                 child: const Text("Ver Perfil"),
                 onPressed: () {
@@ -36,8 +38,10 @@ class HomePage extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) => ProfilePage(user: user),
                     ),
-                  );
-                },
+                      );
+                    },
+                  ),
+                ],
               ),
             ],
           );
